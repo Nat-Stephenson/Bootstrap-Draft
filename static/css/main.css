@@ -1,5 +1,25 @@
 /* HACA Theme Colors */
 :root {
+  /* Font family */
+  --font-main: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  
+  /* Bootstrap-specific variable overrides */
+  --bs-primary: #ae2573 !important;
+  --bs-primary-rgb: 174, 37, 115 !important;
+  --bs-secondary: #5a0a96 !important;
+  --bs-secondary-rgb: 90, 10, 150 !important;
+  --bs-body-color: #333333 !important;
+  --bs-body-color-rgb: 51, 51, 51 !important;
+  --bs-body-bg: #f6f8fa !important;
+  --bs-body-bg-rgb: 246, 248, 250 !important;
+  --bs-link-color: #ae2573 !important;
+  --bs-link-color-rgb: 174, 37, 115 !important;
+  --bs-link-hover-color: #330072 !important;
+  --bs-link-hover-color-rgb: 51, 0, 114 !important;
+  --bs-border-color: #ae2573 !important;
+  --bs-heading-color: #ae2573 !important;
+  
+  /* HACA custom theme variables */
   --navbar-banner-bg: #ae2573;
   --primary: #ae2573;
   --purple: #5a0a96;
@@ -186,11 +206,57 @@ figure:not(.dark) img, img.white {
 
 /* --- Navbar --- */
 
+.navbar-default,
 .navbar-custom {
-  background: var(--navbar-banner-bg);
-  border-bottom: 1px solid var(--purple);
-  font-family: var( --font-main, Arial, sans-serif);
+  background-color: #ae2573 !important;
+  background-image: none !important;
+  border-color: #5a0a96 !important;
 }
+
+.navbar-custom {
+  background: var(--navbar-banner-bg) !important;
+  border-bottom: 1px solid var(--purple) !important;
+  font-family: var(--font-main, Arial, sans-serif);
+}
+
+/* Force nav link colors */
+.navbar-default .navbar-nav > li > a,
+.navbar-custom .navbar-nav > li > a,
+.navbar-default .navbar-brand,
+.navbar-custom .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #330072 !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Force navbar toggle colors */
+.navbar-default .navbar-toggle,
+.navbar-custom .navbar-toggle {
+  border-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar,
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #fff !important;
+}
+
 @media (prefers-color-scheme: dark) {
   .navbar-custom {
     background: var(--navbar-banner-bg);
@@ -199,16 +265,16 @@ figure:not(.dark) img, img.white {
 }
 
 .navbar-custom .nav li a {
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
+  text-transform: capitalize !important;
+  text-align: center !important;
+  font-size: 20px !important;
+  letter-spacing: 2px !important;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: 600;
-  color: var(--header-color);
+  font-weight: 600 !important;
+  color: var(--header-color) !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -383,31 +449,39 @@ figure:not(.dark) img, img.white {
 
 footer {
   padding: 30px 0;
-  background: var(--footer-bg);
-  border-top: 1px solid var(--border);
+  background: #eee !important;
+  background-color: #eee !important;
+  border-top: 1px solid #ae2573 !important;
   margin-top: auto;
   font-size: 14px;
-  color: var(--footer-color);
+  color: #000000 !important;
 }
 
 footer a {
-  color: var(--primary);
+  color: #ae2573 !important;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #330072 !important;
 }
 
 footer .list-inline {
   margin: 0;
   padding: 0;
 }
+
 footer .copyright {
-  font-family: var( --font-main, Arial, sans-serif);
+  font-family: var(--font-main, Arial, sans-serif);
   text-align: center;
   margin-bottom: 0;
-  color: var(--footer-color);
+  color: #000000 !important;
 }
+
 footer .theme-by {
   text-align: center;
   margin: 10px 0 0;
-  color: var(--footer-color);
+  color: #000000 !important;
 }
 
 footer div.disclaimer {
@@ -438,12 +512,16 @@ footer div.disclaimer {
 
 @media (prefers-color-scheme: dark) {
   footer {
-    background: var(--footer-bg);
-    border-top: 1px solid var(--border);
-    color: var(--footer-color);
+    background: #eee !important;
+    border-top: 1px solid #ae2573 !important;
+    color: #000000 !important;
   }
   footer a {
-    color: var(--tertiary);
+    color: #ae2573 !important;
+  }
+  footer a:hover,
+  footer a:focus {
+    color: #330072 !important;
   }
 }
 
