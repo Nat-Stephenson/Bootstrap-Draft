@@ -1,0 +1,89 @@
+baseurl = ""
+DefaultContentLanguage = "en-gb"
+title = "The Health and Care Analytics conference"
+theme = "beautifulhugo"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+
+[Services]
+  [Services.Disqus]
+    # Shortname = "XXX"
+  [Services.googleAnalytics]
+    # id = "XXX"
+
+[Params]
+  homeTitle = "The Health and Care Analytics conference" # Set a different text for the header on the home page
+  subtitle = "Rising to the challenge: Analysis at the heart of health and care systems of the future."
+  mainSections = ["page","pages"]
+  logo = "img/HACA-SWIRL-LOGO.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+#  cusdisID = "XXX" # Get your App id from cusdis.com
+#  hideAuthor = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+#  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Params.author]
+  # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
+  name = "Built by Nat"
+  website = "https://www.strategyunitwm.nhs.uk/"
+  email = "strategyunit.tnc@nhs.net"
+  github = "username"
+  linkedin = "username"
+  youtube = "user/username" # or channel/channelname
+  bluesky = "username"
+
+[[menu.main]]
+    name = "Home"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "Registration"
+    url = ""
+    weight = 2
+
+[[menu.main]]
+    name = "Abstracts"
+    url = ""
+    weight = 3
+
+[[menu.main]]
+    name = "Keynotes"
+    url = ""
+    weight = 4
+
+[[menu.main]]
+    name = "Programme"
+    url = ""
+    weight = 5
+
+[[menu.main]]
+    name = "Past Conferences"
+    url = ""
+    weight = 6
