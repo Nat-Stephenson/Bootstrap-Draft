@@ -10,8 +10,8 @@
   --bs-secondary-rgb: 90, 10, 150 !important;
   --bs-body-color: #333333 !important;
   --bs-body-color-rgb: 51, 51, 51 !important;
-  --bs-body-bg: #f6f8fa !important;
-  --bs-body-bg-rgb: 246, 248, 250 !important;
+  --bs-body-bg: #ffffff !important;
+  --bs-body-bg-rgb: 255, 255, 255 !important;
   --bs-link-color: #ae2573 !important;
   --bs-link-color-rgb: 174, 37, 115 !important;
   --bs-link-hover-color: #330072 !important;
@@ -27,7 +27,7 @@
   --violet: #731373;
   --blue: #330072;
   --body-color: #333333;
-  --bg: #f6f8fa;
+  --bg: #ffffff;
   --header-bg: #ae2573;
   --header-color: #fff;
   --main-bg: #fff;
