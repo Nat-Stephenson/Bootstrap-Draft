@@ -449,8 +449,8 @@ figure:not(.dark) img, img.white {
 
 footer {
   padding: 30px 0;
-  background: #eee !important;
-  background-color: #eee !important;
+  background: #fff !important;
+  background-color: #fff !important;
   border-top: 1px solid #ae2573 !important;
   margin-top: auto;
   font-size: 14px;
