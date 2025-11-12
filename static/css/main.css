@@ -570,12 +570,17 @@ footer div.disclaimer {
   transition: opacity 0.3s ease;
 }
 
-.footer-logo-large {
+/* Individual logo sizes */
+.footer-logo-su {
   height: 90px;
 }
 
-.footer-logo-small {
+.footer-logo-nhs {
   height: 30px;
+}
+
+.footer-logo-hf {
+  height: 50px;
 }
 
 .footer-logo:hover {
@@ -583,12 +588,16 @@ footer div.disclaimer {
 }
 
 @media only screen and (max-width: 767px) {
-  .footer-logo-large {
+  .footer-logo-su {
     height: 60px;
   }
   
-  .footer-logo-small {
+  .footer-logo-nhs {
     height: 25px;
+  }
+  
+  .footer-logo-hf {
+    height: 35px;
   }
   
   .footer-logo {
