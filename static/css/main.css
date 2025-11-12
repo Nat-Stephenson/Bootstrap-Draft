@@ -267,8 +267,8 @@ figure:not(.dark) img, img.white {
 .navbar-custom .nav li a {
   text-transform: capitalize !important;
   text-align: center !important;
-  font-size: 20px !important;
-  letter-spacing: 2px !important;
+  font-size: 18px;
+  letter-spacing: 1px !important;
 }
 
 .navbar-custom .navbar-brand,
